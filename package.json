@@ -1,0 +1,62 @@
+{
+  "name": "@aiherrera/remix-aiherrera.com",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "license": "MIT",
+  "author": {
+    "name": "Alain Iglesias",
+    "email": "info@aiherrera.com",
+    "url": "https://www.aiherrera.com"
+  },
+  "homepage": "https://www.aiherrera.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiherrera/remix-aiherrera.com.git"
+  },
+  "keywords": [
+    "react",
+    "remix",
+    "personal-website",
+    "portfolio"
+  ],
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "check:types": "tsc --pretty --noEmit",
+    "check:format": "pretty-quick --staged",
+    "check:lint": "eslint . --ext .ts,.tsx,.js,.jsx pages --color",
+    "check:all": "npm run check-format && npm run check-lint && npm run check-types && npm run build",
+    "lint:staged": "lint-staged"
+  },
+  "dependencies": {
+    "@remix-run/node": "^1.7.0",
+    "@remix-run/react": "^1.7.0",
+    "@remix-run/vercel": "^1.7.0",
+    "@vercel/node": "^2.5.13",
+    "cross-env": "^7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@remix-run/dev": "^1.7.0",
+    "@remix-run/eslint-config": "^1.7.0",
+    "@remix-run/serve": "^1.7.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "^8.20.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
