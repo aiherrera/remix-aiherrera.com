@@ -13,6 +13,7 @@ import {
 import AsapFontStyle from '@fontsource/asap/index.css'
 import remixImageStyles from 'remix-image/remix-image.css'
 import normalize from './styles/normalize.css'
+import tailwind from './styles/tailwind.css'
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -23,7 +24,8 @@ export const meta: MetaFunction = () => ({
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: AsapFontStyle },
   { rel: 'stylesheet', href: normalize },
-  { rel: 'stylesheet', href: remixImageStyles }
+  { rel: 'stylesheet', href: remixImageStyles },
+  { rel: 'stylesheet', href: tailwind }
 ]
 
 export default function App() {
